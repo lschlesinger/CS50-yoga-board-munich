@@ -2,7 +2,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/lschlesinger/CS50-yoga-board-munich">
-    <img src="frontend/src/assets/logo.png" alt="Logo" width="80" height="80">
+    <img src="frontend/src/assets/logo.png" alt="Logo" width="120">
   </a>
 
   <h3 align="center">YOGA Board Munich</h3>
