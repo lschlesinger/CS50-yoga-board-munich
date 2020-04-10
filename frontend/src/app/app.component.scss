@@ -1,0 +1,17 @@
+nz-footer {
+  text-align: center;
+}
+
+.inner-content {
+  padding: 24px;
+}
+
+.app_container {
+  min-height: 100vh;
+}
+
+.logo {
+  [nz-title] {
+    display: inline-block;
+  }
+}

@@ -1,6 +1,4 @@
-import { Component } from '@angular/core';
-import {HttpClient} from "@angular/common/http";
-import {YogaClass} from "./types";
+import {Component} from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -8,11 +6,7 @@ import {YogaClass} from "./types";
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  classes: YogaClass[];
 
-  constructor(private http:HttpClient) {
-    this.http.get("/api/yoga-class/").subscribe((classes: YogaClass[]) => {
-      this.classes = classes;
-    })
+  constructor() {
   }
 }

@@ -1,0 +1,23 @@
+<nz-layout class="home__container" nz-row nzType="flex" nzAlign="middle" nzJustify="center">
+  <img src="assets/logo.png" width="350">
+  <div class="home__table">
+    <nz-table #basicTable [nzData]="classes">
+      <thead>
+      <tr>
+        <th>Name</th>
+        <th>Title</th>
+        <th>Location</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let data of basicTable.data"
+          class="pointer"
+          [routerLink]="'/details/' + data.id">
+        <td>{{ data.name }}</td>
+        <td>{{ data.title }}</td>
+        <td>{{ data.location }}</td>
+      </tr>
+      </tbody>
+    </nz-table>
+  </div>
+</nz-layout>

@@ -1,6 +1,16 @@
-<h1>Works!</h1>
-<ul>
-  <li *ngFor="let class of classes">
-    {{class.name}}
-  </li>
-</ul>
+<nz-layout class="app_container">
+  <nz-header>
+    <div class="logo" nz-row nzType="flex" nzAlign="middle">
+      <a routerLink="/">
+        <img height="60" src="assets/logo.png" alt="logo">
+      </a>
+      <h3 nz-title>Yoga Board Munich</h3>
+    </div>
+  </nz-header>
+  <nz-content>
+    <div class="inner-content">
+      <router-outlet></router-outlet>
+    </div>
+  </nz-content>
+  <nz-footer>Made with YOGI<span style="color: #4E1C1B;">&#9829;</span> in Munich</nz-footer>
+</nz-layout>
