@@ -43,11 +43,11 @@ So don't hesitate:
 
 ### Built With
 
-* [Spring Boot]()
-* [Angular]()
-* [PostgreSQL]()
-* [Heroku]()
-* [Docker]()
+* Spring Boot
+* Angular
+* PostgreSQL
+* Heroku
+* Docker
 
 
 <!-- GETTING STARTED -->
