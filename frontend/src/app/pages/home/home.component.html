@@ -1,5 +1,21 @@
 <nz-layout class="home__container" nz-row nzType="flex" nzAlign="middle" nzJustify="center">
   <img src="assets/logo.png" width="350">
+  <div class="home_explanation">
+    <p>
+      <b>Yoga Board Munich</b> is a digital notice board - you can either pin up an offer notice or find a suitable class for your next
+      <b>stretch - breath - be together - experience</b>.
+      It enables people to connect for joint yoga classes.
+      As a teacher you can create own classes and add them to the board, in a fast and easy manner.
+      <br>
+    </p>
+    <p class="namaste" nz-row nzAlign="middle" nzJustify="center">
+      <br>
+      •   🧘🏽<b>Namaste</b>   •
+      <br>
+    </p>
+
+
+  </div>
   <div class="home__table">
     <nz-table #basicTable [nzData]="listOfDisplayData">
       <thead (nzSortChange)="sort($event)" nzSingleSort>
@@ -33,6 +49,7 @@
   </div>
   <button nz-button
           nzType="primary"
+          nzSize="large"
           [routerLink]="'/create'">
     <i nz-icon nzType="plus-circle" nzTheme="twotone" nzTwotoneColor="#4E1C1B"></i>
     <span nz-text nzType="secondary">Create own class</span></button>
