@@ -35,7 +35,7 @@ You can either pin up an offer notice or find a suitable class for your next str
 As a teacher you can create classes with basic information and add them to the board in just a few clicks.
 
 So don't hesitate:
-[Check out the MUNICH YOGA BOARD](https://yoga-board.herokuapp.com/)
+[Check out the YOGA BOARD MUNICH](https://yoga-board.herokuapp.com/) (could take a few moments to load)
 
 <img src="https://github.com/lschlesinger/CS50-yoga-board-munich/raw/master/frontend/src/assets/demo-page.png" alt="Demo" width="600">
 
