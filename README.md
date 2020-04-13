@@ -2,7 +2,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/lschlesinger/CS50-yoga-board-munich">
-    <img src="frontend/src/assets/logo.png" alt="Logo" width="120">
+    <img src="https://github.com/lschlesinger/CS50-yoga-board-munich/raw/master/frontend/src/assets/logo.png" alt="Logo" width="120">
   </a>
 
   <h3 align="center">YOGA Board Munich</h3>
@@ -37,7 +37,7 @@ As a teacher you can create classes with basic information and add them to the b
 So don't hesitate:
 [Check out the MUNICH YOGA BOARD](https://yoga-board.herokuapp.com/)
 
-<img src="frontend/src/assets/demo-page.png" alt="Demo" width="600">
+<img src="https://github.com/lschlesinger/CS50-yoga-board-munich/raw/master/frontend/src/assets/demo-page.png" alt="Demo" width="600">
 
 ### Built With
 
