@@ -39,9 +39,9 @@ It enables people to connect for joint yoga classes.
 As a teacher you can create own classes and add them to the board, in just a few clicks.
 
 So don't hesitate:
-
 [Check out the MUNICH YOGA BOARD](https://yoga-board.herokuapp.com/)
-<img src="frontend/src/assets/demo-page.png" alt="Demo" width="120">
+
+<img src="frontend/src/assets/demo-page.png" alt="Demo" width="600">
 
 ### Built With
 
