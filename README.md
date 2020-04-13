@@ -9,8 +9,6 @@
 
   <p align="center">
     This is a CS50 final project.
-    <br />
-    <a href="https://github.com/github_username/repo">View Demo</a>
   </p>
 </p>
 
