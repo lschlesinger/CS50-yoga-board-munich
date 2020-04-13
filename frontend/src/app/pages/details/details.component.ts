@@ -1,4 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {YogaClass} from "../../types";
+import {ActivatedRoute, Params, Router} from "@angular/router";
+import {HttpClient} from "@angular/common/http";
 
 @Component({
   selector: 'app-details',
@@ -6,10 +9,25 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./details.component.scss']
 })
 export class DetailsComponent implements OnInit {
+  currClass: YogaClass;
+  id: string;
 
-  constructor() { }
+  constructor(private route: ActivatedRoute, private router: Router, private httpClient: HttpClient) {
+  }
 
   ngOnInit() {
+    this.route.params.subscribe((params: Params) => {
+      this.id = params.id;
+      this.httpClient.get('api/yoga-class/' + this.id).subscribe(
+        (currClass: YogaClass) => {
+          this.currClass = currClass;
+        }
+      )
+    })
+  }
+
+  onBack(): void {
+    this.router.navigate(['/']);
   }
 
 }

@@ -3,9 +3,8 @@ export enum YogaType {
 }
 
 export interface YogaClass {
-  id: string;
+  id?: string;
   name: string;
-  title: string;
   location: string;
   description: string;
   date: Date;

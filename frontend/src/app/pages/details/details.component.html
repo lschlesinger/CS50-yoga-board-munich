@@ -1,1 +1,12 @@
-<p>details works!</p>
+<div class="details__container"
+     *ngIf="currClass">
+  <nz-page-header (nzBack)="onBack()" nzBackIcon nzTitle="Class Details"> </nz-page-header>
+  <nz-descriptions nzBordered nzLayout="horizontal">
+    <nz-descriptions-item nzTitle="Name" [nzSpan]="3">{{currClass.name}}</nz-descriptions-item>
+    <nz-descriptions-item nzTitle="Teacher" [nzSpan]="3">{{currClass.teacher}}</nz-descriptions-item>
+    <nz-descriptions-item nzTitle="Location" [nzSpan]="3">{{currClass.location}}</nz-descriptions-item>
+    <nz-descriptions-item nzTitle="Type" [nzSpan]="3">{{currClass.type}}</nz-descriptions-item>
+    <nz-descriptions-item nzTitle="Date and Time" [nzSpan]="3">{{currClass.date | date: 'short'}}</nz-descriptions-item>
+    <nz-descriptions-item nzTitle="Description" [nzSpan]="3">{{currClass.description}}</nz-descriptions-item>
+  </nz-descriptions>
+</div>

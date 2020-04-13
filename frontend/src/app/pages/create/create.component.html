@@ -1,1 +1,60 @@
-<p>create works!</p>
+<nz-layout class="create__container" nz-row nzType="flex" nzAlign="middle" nzJustify="center">
+  <h1>Create your own Yoga Class!</h1>
+  <nz-divider></nz-divider>
+  <div class="create__form">
+    <form nz-form [formGroup]="validateForm" (ngSubmit)="submitForm()">
+      <nz-form-item>
+        <nz-form-control nzErrorTip="Please input a name for the class.">
+          <nz-input-group nzPrefixIcon="font-colors">
+            <input type="text" formControlName="name" nz-input placeholder="Class Name">
+          </nz-input-group>
+        </nz-form-control>
+      </nz-form-item>
+      <nz-form-item>
+        <nz-form-control nzErrorTip="Please input a location.">
+          <nz-input-group nzPrefixIcon="environment">
+            <input type="text" formControlName="location" nz-input placeholder="Class Location">
+          </nz-input-group>
+        </nz-form-control>
+      </nz-form-item>
+      <nz-form-item>
+        <nz-form-control nzErrorTip="Please input a class description.">
+          <nz-input-group>
+            <textarea formControlName="description" nz-input rows="2"
+                      placeholder="Write everything that the Yogis need to know about your class"></textarea>
+          </nz-input-group>
+        </nz-form-control>
+      </nz-form-item>
+      <nz-form-item>
+        <nz-form-control nzErrorTip="Please type in your teacher name.">
+          <nz-input-group nzPrefixIcon="user">
+            <input type="text" formControlName="teacher" nz-input placeholder="Teacher Name">
+          </nz-input-group>
+        </nz-form-control>
+      </nz-form-item>
+      <nz-form-item>
+        <nz-form-control nzErrorTip="Please select the class type.">
+          <nz-select formControlName="type" nzPlaceHolder="Select class type">
+            <nz-option *ngFor="let type of types | keyvalue"
+                       [nzValue]="type.key"
+            [nzLabel]="type.value"></nz-option>
+          </nz-select>
+        </nz-form-control>
+      </nz-form-item>
+      <nz-form-item>
+        <nz-form-control nzErrorTip="Please select a class date and start time.">
+          <nz-date-picker [nzDisabledDate]="disabledDate"
+                          [nzShowTime]="{ nzFormat: 'HH:mm' }"
+                          formControlName="date"
+                          nzFormat="M/d/yy, h:mm a">
+          </nz-date-picker>
+        </nz-form-control>
+      </nz-form-item>
+      <nz-form-item>
+        <nz-form-control>
+          <button nz-button nzType="primary" [disabled]="!validateForm.valid">Save</button>
+        </nz-form-control>
+      </nz-form-item>
+    </form>
+  </div>
+</nz-layout>
