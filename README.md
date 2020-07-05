@@ -2,15 +2,13 @@
 <br />
 <p align="center">
   <a href="https://github.com/lschlesinger/CS50-yoga-board-munich">
-    <img src="frontend/src/assets/logo.png" alt="Logo" width="120">
+    <img src="https://github.com/lschlesinger/CS50-yoga-board-munich/raw/master/frontend/src/assets/logo.png" alt="Logo" width="120">
   </a>
 
   <h3 align="center">YOGA Board Munich</h3>
 
   <p align="center">
     This is a CS50 final project.
-    <br />
-    <a href="https://github.com/github_username/repo">View Demo</a>
   </p>
 </p>
 
@@ -27,29 +25,27 @@
 
 
 <!-- ABOUT THE PROJECT -->
+## About the Project
 I've created this website as a final project of the [CS50
 course at Harvard University](https://cs50.harvard.edu/).
 My motivation was to create a digital notice board to easily connect people from Munich for practicing yoga together.
-I am a yoga teacher my own and despite of offering classes on a regular base in studios, one might like to opportunity to simply start sessions rather spontanously at a different places open for everybody interessted. 
-My motivation was to create a digital notice board to easily connect people from Munich for practicing yoga together.
-I am a yoga teacher my own and despite of offering classes on a regular base in studios, one might like to opportunity to simply start sessions rather spontaneously at a different places open for everybody interested. 
+I am a yoga teacher my own and despite of offering classes on a regular base in studios, one might check out the opportunity to simply start sessions rather spontanously at a different places open for everybody interessted. 
 That's why I came up with the idea of Yoga Board Munich.
-Yoga Board Munich is a digital notice board - where you can either pin up an offer notice or find a suitable class for your next stretch - breath - be together - experience.
-It enables people to connect for joint yoga classes.
-As a teacher you can create own classes and add them to the board, in just a few clicks.
+You can either pin up an offer notice or find a suitable class for your next stretch - breath - be together - experience.
+As a teacher you can create classes with basic information and add them to the board in just a few clicks.
 
 So don't hesitate:
+[Check out the YOGA BOARD MUNICH](https://yoga-board.herokuapp.com/) (could take a few moments to load)
 
-[Check out the MUNICH YOGA BOARD](https://yoga-board.herokuapp.com/)
-<img src="frontend/src/assets/demo-page.png" alt="Demo" width="120">
+<img src="https://github.com/lschlesinger/CS50-yoga-board-munich/raw/master/frontend/src/assets/demo-page.png" alt="Demo" width="600">
 
 ### Built With
 
-* [Spring Boot]()
-* [Angular]()
-* [PostgreSQL]()
-* [Heroku]()
-* [Docker]()
+* Spring Boot
+* Angular
+* PostgreSQL
+* Heroku
+* Docker
 
 
 <!-- GETTING STARTED -->
